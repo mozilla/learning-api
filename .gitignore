@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+venv/
+db.sqlite3
+
+# Static files from python manage.py collectstatic
+app/staticfiles/

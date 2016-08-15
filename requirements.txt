@@ -1,0 +1,17 @@
+# Django Framework specific
+Django==1.10
+django-environ==0.4.0
+djangorestframework==3.3.3
+gunicorn==19.4.5
+django_filter==0.13.0
+markdown==2.6.6
+
+# CORS
+django-cors-headers==1.1.0
+
+# Serve static files
+whitenoise==3.0
+
+# Testing
+flake8==2.5.4
+coverage==4.0.3
