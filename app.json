@@ -1,0 +1,10 @@
+{
+  "name": "learning-api",
+  "description": "API server for learning.mozilla.org",
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "scripts": {
+    "postdeploy": "python app/manage.py migrate"
+  }
+}
