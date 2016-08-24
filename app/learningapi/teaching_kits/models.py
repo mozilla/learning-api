@@ -29,6 +29,18 @@ class TeachingKit(models.Model):
         blank=True,
         help_text='URL to a retina quality image.',
     )
+    difficulty = models.CharField(
+        max_length=50,
+        default='Beginner',
+        choices=(
+            ('Beginner', 'Beginner'),
+            ('Intermediate', 'Intermediate'),
+            ('Beginner mobile users', 'Beginner mobile users'),
+            ('13+', '13+'),
+            ('JavaScript beginners', 'JavaScript beginners'),
+        ),
+        help_text='Difficulty levels for an activity'
+    )
 
     def __str__(self):
         return str(self.title)
