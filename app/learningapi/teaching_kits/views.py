@@ -7,7 +7,7 @@ from learningapi.teaching_kits.serializers import (
 )
 
 
-class TeachingKitsListView(ListAPIView):
+class TeachingKitListView(ListAPIView):
     """
     A view that allow listing all the teaching kits
     in the database

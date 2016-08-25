@@ -5,7 +5,7 @@ from .models import Activity
 
 class TeachingKitInline(admin.StackedInline):
     model = Activity.teaching_kits.through
-    verbose_name = 'TeachingKit'
+    verbose_name = 'Teaching Kit'
 
 
 @admin.register(Activity)
