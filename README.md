@@ -10,20 +10,22 @@
 #### Install
 
 1. Install dependencies
-
-```
-$ pip install -r requirements.txt
-```
+  
+  ```
+  $ pip install -r requirements.txt
+  ```
 
 2. Copy `.env`
-```
-cp env.sample .env
-```
+  
+  ```
+  cp env.sample .env
+  ```
 
 3. Run the migration script
-```
-$ python app/manage.py migrate
-```
+ 
+  ```
+  $ python app/manage.py migrate
+  ```
 
 #### Run the server
 
