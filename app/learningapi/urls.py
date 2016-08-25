@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^activities/', include('learningapi.activities.urls')),
+    url(r'^teachingkits/', include('learningapi.teaching_kits.urls')),
 ]
