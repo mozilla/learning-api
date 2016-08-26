@@ -12,6 +12,7 @@ class WebLitSkillListView(ListAPIView):
     in the database
     """
     queryset = WebLitSkill.objects.all()
+    pagination_class = None
     serializer_class = WebLitSkillSerializer
 
 
