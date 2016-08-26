@@ -7,7 +7,5 @@ class WebLitSkillSerializer(serializers.ModelSerializer):
     """
     Serializes a weblit skill
     """
-    activities = serializers.StringRelatedField(many=True)
-
     class Meta:
         model = WebLitSkill

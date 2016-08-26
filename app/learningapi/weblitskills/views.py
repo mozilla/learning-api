@@ -1,5 +1,4 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from rest_framework.pagination import PageNumberPagination
 
 from learningapi.weblitskills.models import WebLitSkill
 from learningapi.weblitskills.serializers import (
@@ -13,7 +12,6 @@ class WebLitSkillListView(ListAPIView):
     in the database
     """
     queryset = WebLitSkill.objects.all()
-    pagination_class = PageNumberPagination
     serializer_class = WebLitSkillSerializer
 
 
