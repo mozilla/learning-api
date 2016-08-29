@@ -10,7 +10,6 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('competencies', '0002_competency'),
         ('skills', '0001_initial'),
     ]
 
@@ -23,7 +22,6 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True, null=True)),
                 ('image_url', models.URLField(blank=True, help_text='URL to a regular quality image.', max_length=500, null=True)),
                 ('image_retina_url', models.URLField(blank=True, help_text='URL to a retina quality image.', max_length=500, null=True)),
-                ('competencies', models.ManyToManyField(blank=True, related_name='skills', to='competencies.Competency')),
             ],
         ),
     ]

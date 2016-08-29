@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'learningapi.activities',
-    'learningapi.competencies',
     'learningapi.authors',
     'learningapi.teaching_kits',
     'learningapi.weblitskills',
