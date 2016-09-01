@@ -1,5 +1,4 @@
 from django.db import models
-from learningapi.competencies.models import Competency
 
 
 class Skill(models.Model):
@@ -22,11 +21,6 @@ class Skill(models.Model):
         null=True,
         blank=True,
         help_text='URL to a retina quality image.',
-    )
-    competencies = models.ManyToManyField(
-        Competency,
-        blank=True,
-        related_name='skills',
     )
 
     def __str__(self):

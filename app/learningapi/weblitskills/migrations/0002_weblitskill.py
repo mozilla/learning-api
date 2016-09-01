@@ -11,7 +11,6 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('skills', '0002_skill'),
-        ('competencies', '0002_competency'),
         ('weblitskills', '0001_initial'),
     ]
 
@@ -22,7 +21,6 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=150)),
                 ('short_name', models.CharField(max_length=100)),
-                ('competencies', models.ManyToManyField(blank=True, related_name='weblit_skills', to='competencies.Competency')),
                 ('skills', models.ManyToManyField(blank=True, related_name='weblit_skills', to='skills.Skill')),
             ],
         ),
